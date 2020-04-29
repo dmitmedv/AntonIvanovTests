@@ -10,5 +10,8 @@ public class Main {
 //        fileTests.insertToNotesFromFile();
 //        fileTests.deleteFile();
         fileTests.readAndSort();
+        createFile();     //creating 1000 files
+        //deleteFiles();  // delete 1000 giles
+        //writeToFiles();  // write to each of 1000 files
     }
 }

@@ -10,6 +10,10 @@ public class Main {
 //        fileTests.readFromFile();
 //        fileTests.insertToNotesFromFile();
 //        fileTests.deleteFile();
+//        fileTests.readAndSort();
+//        createFile();     //uncomment to create 1000 files
+//        deleteFiles();    //uncomment to delete 1000 files
+//        writeToFiles();   //uncomment to write into each file a number
        // fileTests.readAndSort();
         RegexLesson regexLesson = new RegexLesson();
         regexLesson.test1();

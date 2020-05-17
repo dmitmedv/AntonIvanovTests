@@ -92,4 +92,51 @@ public class FileTests {
             System.out.println("ok");
         }
     }
+    public static void createFile() {
+        int n = 0;
+        for (int i = 0; i <= 999; i++) {
+            n++;
+            File file = new File("file" + n + ".txt");
+            try {
+                if (file.createNewFile()) {
+                    System.out.println("File created");
+                } else {
+                    System.out.println("Not Created");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void deleteFiles() {
+        int n = 0;
+        for (int i = 0; i <= 999; i++) {
+            n++;
+            File file = new File("file" + n + ".txt");
+            if (file.delete()) {
+                System.out.println("Deleted");
+            } else {
+                System.out.println("Not deleted");
+            }
+        }
+    }
+
+    public static void writeToFiles() {
+        int n = 0;
+        int m = 0;
+        for (int i = 0; i <= 999; i++) {
+            n++;
+            String s = Integer.toString(n+1);
+            try {
+                FileWriter file = new FileWriter("file" + n + ".txt");
+                file.write(s);
+                file.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }

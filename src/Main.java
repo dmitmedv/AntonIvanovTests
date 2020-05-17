@@ -1,4 +1,5 @@
 import FileTests.FileTests;
+import regex.RegexLesson;
 
 public class Main {
 
@@ -9,6 +10,8 @@ public class Main {
 //        fileTests.readFromFile();
 //        fileTests.insertToNotesFromFile();
 //        fileTests.deleteFile();
-        fileTests.readAndSort();
+       // fileTests.readAndSort();
+        RegexLesson regexLesson = new RegexLesson();
+        regexLesson.test1();
     }
 }

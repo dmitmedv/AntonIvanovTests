@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class FileTests {
-    public void createFile() {
+    public void createFile2() {
         File file = new File("langs.txt");
         try {
             if (file.createNewFile()) {

@@ -1,10 +1,10 @@
 package regex;
 
 public class RegexLesson {
-    String p = "Privet   ,  kak dela  . how are you. Test, test2.";
-    String regex = "(\\w)(\\s+)([\\.,])";
+    String p = "Phone +7(903)8887766, +7(915)1112233";
+    String regex = "(\\+7\\(\\d\\d\\d\\)\\d{3})(\\d{4})";
 
     public void test1() {
-        System.out.println(p.replaceAll(regex,"$1$3"));
+        System.out.println(p.replaceAll(regex,"$1****"));
     }
 }

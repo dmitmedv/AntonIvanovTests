@@ -1,3 +1,4 @@
+import Collections.ArrayListTest;
 import FileTests.FileTests;
 import regex.RegexLesson;
 
@@ -14,8 +15,9 @@ public class Main {
 //        createFile();     //uncomment to create 1000 files
 //        deleteFiles();    //uncomment to delete 1000 files
 //        writeToFiles();   //uncomment to write into each file a number
-       // fileTests.readAndSort();
-        RegexLesson regexLesson = new RegexLesson();
-        regexLesson.test1();
+        // fileTests.readAndSort();
+        //RegexLesson regexLesson = new RegexLesson();
+        //regexLesson.test1();
+        ArrayListTest.print();
     }
 }

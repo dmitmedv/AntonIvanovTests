@@ -4,6 +4,7 @@ import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileTests {
@@ -41,6 +42,7 @@ public class FileTests {
             e.printStackTrace();
         }
     }
+
     public void readAndSort() {
         ArrayList<String> langs = new ArrayList<String>();
         try {
@@ -56,6 +58,7 @@ public class FileTests {
         Collections.sort(langs);
         System.out.println(langs);
     }
+
     public void deleteFile() {
         System.out.print("File name: ");
         Scanner scan = new Scanner(System.in);
@@ -64,7 +67,7 @@ public class FileTests {
         if (file.exists()) {
             file.delete();
             System.out.println("Deleted");
-        }else {
+        } else {
             System.out.println("File doesnt exist");
         }
     }
@@ -82,7 +85,7 @@ public class FileTests {
             while (scanner.hasNext()) {
                 String s = scanner.next();
 //                System.out.print(s + ", ");
-                stmt.executeUpdate("insert into notes values ("+id+", '"+s+"')");
+                stmt.executeUpdate("insert into notes values (" + id + ", '" + s + "')");
                 id++;
             }
             con.close();
@@ -92,4 +95,43 @@ public class FileTests {
             System.out.println("ok");
         }
     }
+
+    public static void hashMapTest1() {
+        HashMap<String, String> brandCountry = new HashMap<String, String>();
+        brandCountry.put("Apple", "US");
+        brandCountry.put("Toyota", "Japan");
+        brandCountry.put("AK-47", "Russia");
+        brandCountry.put("Adidas", "Germany");
+        System.out.println(brandCountry);
+        System.out.println(brandCountry.get("Adidas"));
+        System.out.println(brandCountry.size());
+        System.out.println("\n");
+        //brandCountry.clear();
+        //System.out.println(brandCountry);
+        System.out.println("VALUES:");
+        for (
+                String i : brandCountry.values())
+
+        {
+            System.out.println(i);
+        }
+        System.out.println("\n");
+        for (
+                String i : brandCountry.keySet())
+
+        {
+            System.out.println("KEY:" + i + " " + "VALUE:" + brandCountry.get(i));
+        }
+    }
+
+    public static void hashMapTest2() {
+        HashMap<String, Integer> currency = new HashMap<String, Integer>();
+        currency.put("Gold", 200);
+        currency.put("Dollar", 35);
+        currency.put("Euro", 45);
+        for (String i : currency.keySet()) {
+            System.out.println("KEY: " + i + " " + "VALUE: " + currency.get(i));
+        }
+    }
+
 }

@@ -10,5 +10,7 @@ public class Main {
 //        fileTests.insertToNotesFromFile();
 //        fileTests.deleteFile();
         fileTests.readAndSort();
+        hashMapTest2();
+        //hashMapTest1();
     }
 }

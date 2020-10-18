@@ -6,6 +6,19 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+// FOR MAIN CLASS
+//FileTests fileTests = new FileTests();
+//        fileTests.createFile();
+//        fileTests.writeToFile();
+//        fileTests.readFromFile();
+//        fileTests.insertToNotesFromFile();
+//        fileTests.deleteFile();
+//        fileTests.readAndSort();
+//        createFile();     //uncomment to create 1000 files
+//        deleteFiles();    //uncomment to delete 1000 files
+//        writeToFiles();   //uncomment to write into each file a number
+// fileTests.readAndSort();
+
 public class FileTests {
     public void createFile2() {
         File file = new File("langs.txt");

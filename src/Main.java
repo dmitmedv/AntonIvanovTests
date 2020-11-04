@@ -16,5 +16,8 @@ public class Main {
         System.out.println("обновленный\n");
         list.remove(2);
         System.out.println(list);
+		System.out.println(list.getLastElement());
+        System.out.println(list.getFirstElement());
+        list.countPositive();
     }
 }

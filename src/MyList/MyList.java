@@ -7,7 +7,7 @@ public class MyList {
     private Integer elements[];
 
     public MyList() {
-        elements = new Integer[3];
+        elements = new Integer[7];
     }
 
     public void add(Integer integer) {
@@ -19,7 +19,7 @@ public class MyList {
     }
 
     public void reSize() {
-        int newSize = elements.length*2;
+        int newSize = elements.length+10;
         elements = Arrays.copyOf(elements, newSize);
     }
 
@@ -29,6 +29,23 @@ public class MyList {
 
     public Integer get(int index) {
         return elements[index];
+    }
+	public int getLastElement() {
+        return elements[size - 1];
+    }
+
+    public int getFirstElement() {
+        return elements[0];
+    }
+
+    public void countPositive() {
+        int count=0;
+        for (int i = 0; i < elements.length; i++) {
+            if (elements[i] > 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 
     public Integer remove(int index) {

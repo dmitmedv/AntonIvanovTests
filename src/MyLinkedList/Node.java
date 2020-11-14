@@ -8,6 +8,11 @@ public class Node {
         this(null, null);
     }
 
+    public Node(Integer element, Node next) {
+        this.element = element;
+        this.next = next;
+    }
+
     public Integer getElement() {
         return element;
     }
@@ -21,11 +26,6 @@ public class Node {
     }
 
     public void setNext(Node next) {
-        this.next = next;
-    }
-
-    public Node(Integer element, Node next) {
-        this.element = element;
         this.next = next;
     }
 }

@@ -26,5 +26,16 @@ public class MyLinkedList {
         size++;
 
     }
+    public void getFirst() {
+        System.out.println(head.getElement());
+    }
+
+    public void getLast() {
+        System.out.println(tail.getElement());
+    }
+
+    public void getSize() {
+        System.out.println(size);
+    }
 }
 

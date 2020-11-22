@@ -27,15 +27,15 @@ public class MyLinkedList {
 
     }
     public void getFirst() {
-        System.out.println(head.getElement());
+        return head.getElement();
     }
 
     public void getLast() {
-        System.out.println(tail.getElement());
+        return tail.getElement();
     }
 
     public void getSize() {
-        System.out.println(size);
+        return size;
     }
 }
 

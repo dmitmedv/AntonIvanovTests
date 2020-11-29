@@ -11,5 +11,8 @@ public class Main {
         myLinkedList.getFirst();
         myLinkedList.getLast();
         myLinkedList.getSize();
+        myLinkedList.addAfter(new Node(33, null),22);
+        myLinkedList.removeFirst();
+        myLinkedList.print();
     }
 }

@@ -24,17 +24,48 @@ public class MyLinkedList {
         tail.setNext(node);
         tail = node;
         size++;
+    }
+
+    public void print() {
+        if (head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+        Node tmp = head;
+        for (int i = 0; i < size; i++) {
+            System.out.print(tmp.getElement() + " ");
+            tmp = tmp.getNext();
+        }
 
     }
-    public void getFirst() {
+
+    public void addAfter(Node node, int value) {
+        Node tmp = head;
+        for (int i = 0; i < size; i++) {
+            if (tmp.getElement() == value) {
+                node.setNext(tmp.getNext());
+                tmp.setNext(node);
+                size++;
+                return;
+            }
+            tmp = tmp.getNext();
+        }
+    }
+
+    public void removeFirst() {
+        head = head.getNext();
+        size--;
+    }
+
+    public int getFirst() {
         return head.getElement();
     }
 
-    public void getLast() {
+    public int getLast() {
         return tail.getElement();
     }
 
-    public void getSize() {
+    public int getSize() {
         return size;
     }
 }

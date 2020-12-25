@@ -36,7 +36,20 @@ public class MyLinkedList {
             System.out.print(tmp.getElement() + " ");
             tmp = tmp.getNext();
         }
+    }
 
+
+    public void addAfter(Node node, int value) {
+        Node tmp = head;
+        for (int i = 0; i < size; i++) {
+            if (tmp.getElement() == value) {
+                node.setNext(tmp.getNext());
+                tmp.setNext(node);
+                size++;
+                return;
+            }
+            tmp = tmp.getNext();
+        }
     }
 
     public void print2() {

@@ -11,5 +11,15 @@ public class Main {
         myLinkedList.getFirst();
         myLinkedList.getLast();
         myLinkedList.getSize();
+        myLinkedList.print();
+        myLinkedList.removeFirst();
+        System.out.println("\n");
+        myLinkedList.print2();
+        System.out.println("\n");
+        myLinkedList.addAfter(new Node(666, null), 60);
+        myLinkedList.print2();
+        System.out.println("\n");
+        myLinkedList.deleteByElement(60);
+        myLinkedList.print2();
     }
 }

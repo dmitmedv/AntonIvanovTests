@@ -10,4 +10,12 @@ public class Bonus implements Placeable {
     public Bonus(BonusesName name) {
         this.name = name;
     }
+
+    public BonusesName getName() {
+        return name;
+    }
+
+    public void setName(BonusesName name) {
+        this.name = name;
+    }
 }
